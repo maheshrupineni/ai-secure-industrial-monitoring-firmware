@@ -1,0 +1,6 @@
+# espressif/ds18b20 0.2.0 references this optional sensor_hub flag in
+# its dependency manifest. Declare the disabled standalone-driver setting
+# explicitly so a fresh ESP-IDF 6.1 checkout can resolve its Kconfig condition.
+config DS18B20_SENSOR_HUB
+    bool
+    default n

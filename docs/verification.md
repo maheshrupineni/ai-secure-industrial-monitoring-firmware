@@ -14,7 +14,7 @@ Author: Mahesh Rupineni. Updated: 31 October 2026.
 | Recovery live | RECOVERY -> NORMAL at sequence 72; NORMAL through sequence 84 with zero validation issues | Same temperature test, not independent field validation |
 | MQTT | Verified TLS connection, queued telemetry and matching broker acknowledgements | Acknowledgement is not independent receiver validation; reconnects and offline gaps remain |
 | OTA historical | 0.1.0 -> 0.1.1 update/confirmation; deliberate 0.1.2 rejection and rollback observed earlier | Older firmware/candidates; deleted hosting unavailable; no final sensor-image repeat yet |
-| CI | Workflow supplied | Execution status to be checked after publication; no CI-pass claim |
+| CI | Workflow supplied | Host CI passed; first fresh firmware CI exposed an undefined optional DS18B20 sensor-hub flag; explicit disabled Kconfig compatibility setting added; rerun pending |
 
 The latest normal -> 65°C warning/anomaly -> recovery -> normal sequence was supplied as user terminal logs. Historical OTA results were observed earlier in the project, not reproduced by host verification. The cleanup package preserves driver/model bytes and changes only the startup banner among active firmware C sources.
 
