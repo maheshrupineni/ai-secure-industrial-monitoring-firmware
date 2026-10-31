@@ -2,5 +2,5 @@
 # its dependency manifest. Declare the disabled standalone-driver setting
 # explicitly so a fresh ESP-IDF 6.1 checkout can resolve its Kconfig condition.
 config DS18B20_SENSOR_HUB
-    bool
+    bool "Enable optional DS18B20 sensor-hub integration"
     default n

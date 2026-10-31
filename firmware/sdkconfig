@@ -3747,3 +3747,6 @@ CONFIG_SUPPRESS_SELECT_DEBUG_OUTPUT=y
 # CONFIG_SUPPORT_TERMIOS is not set
 CONFIG_SEMIHOSTFS_MAX_MOUNT_POINTS=1
 # End of deprecated options
+
+# Standalone DS18B20 driver; optional sensor-hub integration disabled
+# CONFIG_DS18B20_SENSOR_HUB is not set
