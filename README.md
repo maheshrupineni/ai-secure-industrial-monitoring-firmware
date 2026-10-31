@@ -41,6 +41,14 @@ python3 -m venv python/.capture-venv
 ./python/.capture-venv/bin/python python/scripts/mqtt_receiver_tls.py
 ```
 
+The receiver displays only temperature, current proxy, status, anomaly and transport:
+
+```text
+Temp: 42.50 °C | Current proxy: 2.44 A-eq | Status: NORMAL | Anomaly: NO | Transport: MQTT/TLS
+```
+
+Connection/error messages remain visible. Invalid-quality input is labelled INVALID INPUT and its anomaly decision is N/A. Vibration and other telemetry fields remain in the firmware payload but are hidden from this compact receiver display. Status represents the threshold state, separate from the statistical anomaly decision.
+
 Firmware network settings are in `firmware/components/communication/include/communication_config.h`; the receiver uses `simulation/mqtt_settings.json`. Keep host and topic consistent. Public broker messages are visible to others and can be spoofed; certificate verification authenticates the server, not publishing devices. Offline records are skipped, not durably buffered.
 
 ## Wiring
