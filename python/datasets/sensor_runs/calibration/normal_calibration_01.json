@@ -1,0 +1,38 @@
+{
+  "run_id": "normal_calibration_01",
+  "split": "calibration",
+  "label": "normal",
+  "scenario": "independent_normal_variation",
+  "source": "Wokwi simulated sensors; ADC current proxy, not measured RMS",
+  "started_at_utc": "2026-10-30T18:20:37.346449+00:00",
+  "finished_at_utc": "2026-10-30T18:22:02.195639+00:00",
+  "collected_records": 60,
+  "requested_records": 60,
+  "status": "complete",
+  "rejected": 0,
+  "duplicates": 0,
+  "retained": 0,
+  "state_counts": {
+    "NORMAL": 60
+  },
+  "feature_statistics": {
+    "temperature_c": {
+      "min": 41.312,
+      "max": 95.125,
+      "std": 7.405261884362274
+    },
+    "vibration_rms_g": {
+      "min": 0.0,
+      "max": 0.033064,
+      "std": 0.009380453723742624
+    },
+    "current_rms_a": {
+      "min": 1.819,
+      "max": 2.923,
+      "std": 0.15519978012681734
+    }
+  },
+  "stop_reason": "target reached",
+  "security": "Public broker: TLS verifies server, not device identity. Topic/device ID are not authentication.",
+  "limitations": "Delivery latency not measured; no physical data or industrial performance claim."
+}

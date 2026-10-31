@@ -1,0 +1,5 @@
+{
+  "broker_host": "broker.hivemq.com",
+  "broker_port": 8883,
+  "telemetry_topic": "industrial-monitor-demo/monitor-5b90e0b212964632/telemetry"
+}

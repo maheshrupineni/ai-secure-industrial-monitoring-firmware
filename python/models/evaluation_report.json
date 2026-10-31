@@ -1,0 +1,27 @@
+{
+  "source": "Wokwi commissioning captures; DS18B20, MPU6050 window RMS, ADC current proxy (not measured current RMS)",
+  "model_sha256": "d3242104dfe63e1535ed5de26f44617f983e56ae56ce0eb4c01af205aea142e0",
+  "test_sha256": "92fca32f3397081ed5819e8ab26bc5189bb8144c4531c9f6a1de6b628f54a37e",
+  "threshold": 16.791719635777017,
+  "true_positive": 60,
+  "true_negative": 60,
+  "false_positive": 0,
+  "false_negative": 0,
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_positive_rate": 0.0,
+    "accuracy": 1.0
+  },
+  "scenarios": {
+    "held_normal_baseline": {
+      "total": 60,
+      "flagged": 0
+    },
+    "held_temperature_65c": {
+      "total": 60,
+      "flagged": 60
+    }
+  },
+  "limitation": "Only two small simulated test scenarios were evaluated; this does not establish field accuracy or current/vibration fault detection."
+}

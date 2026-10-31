@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "model_type": "diagonal_standardized_squared_distance",
+  "feature_order": [
+    "temperature_c",
+    "vibration_rms_g",
+    "current_rms_a"
+  ],
+  "means": [
+    42.46665,
+    0.0018648666666666667,
+    2.3570333333333333
+  ],
+  "standard_deviations": [
+    0.18923707890870195,
+    0.005847745836794842,
+    0.09769859681289716
+  ],
+  "threshold": 16.791719635777017,
+  "decision_rule": "anomaly if score > threshold",
+  "score_definition": "mean of squared standardized features",
+  "training_records": 60,
+  "calibration_records": 17,
+  "calibration_percentile": 0.99,
+  "calibration_method": "nearest-rank percentile",
+  "calibration_flagged_records": 0,
+  "source": "Wokwi commissioning captures; DS18B20, MPU6050 window RMS, ADC current proxy (not measured current RMS)"
+}

@@ -1,0 +1,12 @@
+{
+  "calibration/normal_calibration_01.csv": "fe4e8032f84c4902066816d58f6694d10557189e8c64bbce6886168bf57ae74c",
+  "calibration/normal_calibration_01.json": "b5e2bd2159abbbc1b3b6ea708d85ae1da0f1ea112988f664ca7bcdf6e32de47b",
+  "calibration/normal_calibration_02.csv": "afd15b028f7f5c1aeaae817a229f62c55418aa76d5df261d66a5bcbf18eca43b",
+  "calibration/normal_calibration_02.json": "8aa0f8c6fcf5203deb51dcb1237f18061dc223727cc86f5797a0476968722372",
+  "test/normal_test_01.csv": "a55cccc92d2a04360128923047da1c7207925695cc91f2b80644baa5661c78ea",
+  "test/normal_test_01.json": "a4876735753803dc65df1ee8db87a660e4f86d6f9559ba24c0e8aa4e1ba71af6",
+  "test/temperature_abnormal_test_01.csv": "9060e6714e13fd7a410f2d50b67ec5d93097c4e0debf39f9e597ded5b9606e35",
+  "test/temperature_abnormal_test_01.json": "73cb1c2d8faa7d546e6a92bad74002ee7a26c95e2e004e38b40971f25b838a6c",
+  "train/normal_train_01.csv": "fced7455155df737fb2472d0bfb63b0f48eb173c88419538ae56c2ce457c04e4",
+  "train/normal_train_01.json": "3b3256a0fcc18b7f133570d95585def997ecb7d24f3f38d06857e87c178d9449"
+}

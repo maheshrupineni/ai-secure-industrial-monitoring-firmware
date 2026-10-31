@@ -1,0 +1,122 @@
+file,data_row,sequence,action,reason
+train/normal_train_01.csv,1,10,include,within predefined normal range
+train/normal_train_01.csv,2,12,include,within predefined normal range
+train/normal_train_01.csv,3,13,include,within predefined normal range
+train/normal_train_01.csv,4,14,include,within predefined normal range
+train/normal_train_01.csv,5,15,include,within predefined normal range
+train/normal_train_01.csv,6,16,include,within predefined normal range
+train/normal_train_01.csv,7,17,include,within predefined normal range
+train/normal_train_01.csv,8,18,include,within predefined normal range
+train/normal_train_01.csv,9,19,include,within predefined normal range
+train/normal_train_01.csv,10,20,include,within predefined normal range
+train/normal_train_01.csv,11,21,include,within predefined normal range
+train/normal_train_01.csv,12,22,include,within predefined normal range
+train/normal_train_01.csv,13,23,include,within predefined normal range
+train/normal_train_01.csv,14,24,include,within predefined normal range
+train/normal_train_01.csv,15,25,include,within predefined normal range
+train/normal_train_01.csv,16,26,include,within predefined normal range
+train/normal_train_01.csv,17,27,include,within predefined normal range
+train/normal_train_01.csv,18,28,include,within predefined normal range
+train/normal_train_01.csv,19,29,include,within predefined normal range
+train/normal_train_01.csv,20,30,include,within predefined normal range
+train/normal_train_01.csv,21,31,include,within predefined normal range
+train/normal_train_01.csv,22,32,include,within predefined normal range
+train/normal_train_01.csv,23,33,include,within predefined normal range
+train/normal_train_01.csv,24,34,include,within predefined normal range
+train/normal_train_01.csv,25,35,include,within predefined normal range
+train/normal_train_01.csv,26,36,include,within predefined normal range
+train/normal_train_01.csv,27,37,include,within predefined normal range
+train/normal_train_01.csv,28,38,include,within predefined normal range
+train/normal_train_01.csv,29,39,include,within predefined normal range
+train/normal_train_01.csv,30,40,include,within predefined normal range
+train/normal_train_01.csv,31,41,include,within predefined normal range
+train/normal_train_01.csv,32,42,include,within predefined normal range
+train/normal_train_01.csv,33,43,include,within predefined normal range
+train/normal_train_01.csv,34,44,include,within predefined normal range
+train/normal_train_01.csv,35,45,include,within predefined normal range
+train/normal_train_01.csv,36,46,include,within predefined normal range
+train/normal_train_01.csv,37,47,include,within predefined normal range
+train/normal_train_01.csv,38,48,include,within predefined normal range
+train/normal_train_01.csv,39,49,include,within predefined normal range
+train/normal_train_01.csv,40,50,include,within predefined normal range
+train/normal_train_01.csv,41,51,include,within predefined normal range
+train/normal_train_01.csv,42,52,include,within predefined normal range
+train/normal_train_01.csv,43,53,include,within predefined normal range
+train/normal_train_01.csv,44,54,include,within predefined normal range
+train/normal_train_01.csv,45,55,include,within predefined normal range
+train/normal_train_01.csv,46,56,include,within predefined normal range
+train/normal_train_01.csv,47,57,include,within predefined normal range
+train/normal_train_01.csv,48,58,include,within predefined normal range
+train/normal_train_01.csv,49,59,include,within predefined normal range
+train/normal_train_01.csv,50,60,include,within predefined normal range
+train/normal_train_01.csv,51,61,include,within predefined normal range
+train/normal_train_01.csv,52,62,include,within predefined normal range
+train/normal_train_01.csv,53,63,include,within predefined normal range
+train/normal_train_01.csv,54,64,include,within predefined normal range
+train/normal_train_01.csv,55,65,include,within predefined normal range
+train/normal_train_01.csv,56,66,include,within predefined normal range
+train/normal_train_01.csv,57,67,include,within predefined normal range
+train/normal_train_01.csv,58,68,include,within predefined normal range
+train/normal_train_01.csv,59,69,include,within predefined normal range
+train/normal_train_01.csv,60,70,include,within predefined normal range
+calibration/normal_calibration_02.csv,1,39,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,2,40,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,3,41,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,4,42,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,5,43,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,6,44,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,7,45,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,8,46,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,9,47,include,within predefined normal range
+calibration/normal_calibration_02.csv,10,49,include,within predefined normal range
+calibration/normal_calibration_02.csv,11,50,include,within predefined normal range
+calibration/normal_calibration_02.csv,12,51,include,within predefined normal range
+calibration/normal_calibration_02.csv,13,52,include,within predefined normal range
+calibration/normal_calibration_02.csv,14,53,include,within predefined normal range
+calibration/normal_calibration_02.csv,15,54,include,within predefined normal range
+calibration/normal_calibration_02.csv,16,55,include,within predefined normal range
+calibration/normal_calibration_02.csv,17,56,include,within predefined normal range
+calibration/normal_calibration_02.csv,18,57,include,within predefined normal range
+calibration/normal_calibration_02.csv,19,58,include,within predefined normal range
+calibration/normal_calibration_02.csv,20,59,include,within predefined normal range
+calibration/normal_calibration_02.csv,21,60,include,within predefined normal range
+calibration/normal_calibration_02.csv,22,61,include,within predefined normal range
+calibration/normal_calibration_02.csv,23,62,include,within predefined normal range
+calibration/normal_calibration_02.csv,24,63,include,within predefined normal range
+calibration/normal_calibration_02.csv,25,64,include,within predefined normal range
+calibration/normal_calibration_02.csv,26,65,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,27,66,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,28,67,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,29,68,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,30,69,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,31,70,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,32,71,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,33,72,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,34,73,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,35,74,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,36,75,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,37,76,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,38,77,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,39,78,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,40,79,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,41,80,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,42,81,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,43,82,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,44,83,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,45,84,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,46,85,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,47,86,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,48,87,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,49,88,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,50,89,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,51,90,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,52,91,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,53,92,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,54,93,exclude,outside intended 41..44C normal range; outside intended 2..3A proxy normal range
+calibration/normal_calibration_02.csv,55,94,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,56,95,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,57,96,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,58,97,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,59,98,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_02.csv,60,99,exclude,outside intended 41..44C normal range
+calibration/normal_calibration_01.csv,all,all,exclude,entire capture quarantined: operator-confirmed accidental high-temperature control change

@@ -1,0 +1,17 @@
+.DS_Store
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/.capture-venv/
+firmware/build/
+firmware/managed_components/
+firmware/industrial_monitor_ota/
+**/sdkconfig.old
+**/*.before_*
+docs/*before_*/
+docs/*baseline*/
+local_backups/
+release/
+*.zip
+*.bin
+*.elf

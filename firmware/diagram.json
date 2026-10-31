@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "author": "Mahesh Rupineni",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "board-ds18b20",
+      "id": "temp_sensor",
+      "top": -40,
+      "left": 250,
+      "attrs": {
+        "temperature": "42.5"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "temp_pullup",
+      "top": -100,
+      "left": 250,
+      "attrs": {
+        "value": "4700"
+      }
+    },
+    {
+      "type": "wokwi-mpu6050",
+      "id": "vibration_sensor",
+      "top": 150,
+      "left": 250,
+      "attrs": {
+        "accelX": "0",
+        "accelY": "0",
+        "accelZ": "1"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "current_input",
+      "top": 280,
+      "left": 250,
+      "attrs": {
+        "value": "250"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX0",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX0",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "temp_sensor:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "temp_sensor:GND",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "temp_sensor:DQ",
+      "esp:D4",
+      "green",
+      []
+    ],
+    [
+      "temp_pullup:1",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "temp_pullup:2",
+      "temp_sensor:DQ",
+      "green",
+      []
+    ],
+    [
+      "vibration_sensor:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "vibration_sensor:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "vibration_sensor:SDA",
+      "esp:D21",
+      "green",
+      []
+    ],
+    [
+      "vibration_sensor:SCL",
+      "esp:D22",
+      "blue",
+      []
+    ],
+    [
+      "vibration_sensor:AD0",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "current_input:VCC",
+      "esp:3V3",
+      "red",
+      []
+    ],
+    [
+      "current_input:GND",
+      "esp:GND.2",
+      "black",
+      []
+    ],
+    [
+      "current_input:SIG",
+      "esp:D34",
+      "orange",
+      []
+    ]
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "source": "Wokwi commissioning captures; DS18B20, MPU6050 window RMS, ADC current proxy (not measured current RMS)",
+  "feature_order": [
+    "temperature_c",
+    "vibration_rms_g",
+    "current_rms_a"
+  ],
+  "selection_plan": {
+    "train": [
+      "train/normal_train_01.csv"
+    ],
+    "calibration": [
+      "calibration/normal_calibration_02.csv"
+    ],
+    "test": [
+      "test/normal_test_01.csv",
+      "test/temperature_abnormal_test_01.csv"
+    ],
+    "exclude_entire_run": [
+      "calibration/normal_calibration_01.csv"
+    ]
+  },
+  "raw_run_manifest": {
+    "train/normal_train_01.csv": {
+      "csv_sha256": "fced7455155df737fb2472d0bfb63b0f48eb173c88419538ae56c2ce457c04e4",
+      "metadata_sha256": "3b3256a0fcc18b7f133570d95585def997ecb7d24f3f38d06857e87c178d9449",
+      "rows": 60
+    },
+    "calibration/normal_calibration_02.csv": {
+      "csv_sha256": "afd15b028f7f5c1aeaae817a229f62c55418aa76d5df261d66a5bcbf18eca43b",
+      "metadata_sha256": "8aa0f8c6fcf5203deb51dcb1237f18061dc223727cc86f5797a0476968722372",
+      "rows": 60
+    },
+    "calibration/normal_calibration_01.csv": {
+      "csv_sha256": "fe4e8032f84c4902066816d58f6694d10557189e8c64bbce6886168bf57ae74c",
+      "metadata_sha256": "b5e2bd2159abbbc1b3b6ea708d85ae1da0f1ea112988f664ca7bcdf6e32de47b",
+      "rows": 60
+    },
+    "test/normal_test_01.csv": {
+      "csv_sha256": "a55cccc92d2a04360128923047da1c7207925695cc91f2b80644baa5661c78ea",
+      "metadata_sha256": "a4876735753803dc65df1ee8db87a660e4f86d6f9559ba24c0e8aa4e1ba71af6",
+      "rows": 60
+    },
+    "test/temperature_abnormal_test_01.csv": {
+      "csv_sha256": "9060e6714e13fd7a410f2d50b67ec5d93097c4e0debf39f9e597ded5b9606e35",
+      "metadata_sha256": "73cb1c2d8faa7d546e6a92bad74002ee7a26c95e2e004e38b40971f25b838a6c",
+      "rows": 60
+    }
+  },
+  "training_rows": 60,
+  "calibration_rows": 17,
+  "test_rows": 120,
+  "exclusions": {
+    "entire_calibration_01_rows": 60,
+    "calibration_02_out_of_range_rows": 43
+  },
+  "scope": "Provisional commissioning demo; one training capture, 17 selected calibration rows, two constant held test scenarios. No physical hardware validation. Captures have separate IDs/times but no device boot-session ID.",
+  "calibration_limit": "99th nearest-rank percentile on 17 rows is their maximum; cannot establish a 1% false-positive rate.",
+  "labels": "Operator-assigned test conditions; not derived from AI scores or fault state.",
+  "no_invented_noise": true
+}
