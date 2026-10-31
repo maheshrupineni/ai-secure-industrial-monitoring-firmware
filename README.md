@@ -2,6 +2,8 @@
 
 **Mahesh Rupineni**
 
+[![Verify industrial monitor](https://github.com/maheshrupineni/ai-secure-industrial-monitoring-firmware/actions/workflows/verify.yml/badge.svg)](https://github.com/maheshrupineni/ai-secure-industrial-monitoring-firmware/actions/workflows/verify.yml)
+
 A completed ESP32 monitoring prototype built with ESP-IDF and FreeRTOS, demonstrated in Wokwi. It acquires temperature and acceleration, reads a potentiometer as a current proxy, validates records, evaluates threshold states and a statistical anomaly model, and publishes telemetry over certificate-verified MQTT TLS. HTTPS OTA and rollback support are included with automatic updates disabled.
 
 ## Features
@@ -55,7 +57,7 @@ The legacy telemetry field `current_rms_a` contains a scaled potentiometer level
 
 ## Verification and demonstration
 
-See [verification](docs/verification.md) for observed results and [demo procedure](docs/demo.md) for a combined run. Local host checks and the final cleaned ESP32 firmware build passed. The updated model's baseline, 65°C warning/anomaly and return through RECOVERY to NORMAL were observed in Wokwi. The final cleaned firmware passed a fresh Wokwi baseline check: NORMAL state, zero validation issues, anomaly=0, verified TLS connection and MQTT broker acknowledgements. GitHub Actions is configured; its execution status must be checked after publication.
+See [verification](docs/verification.md) for observed results and [demo procedure](docs/demo.md) for a combined run. Local host checks and the final cleaned ESP32 firmware build passed. The updated model's baseline, 65°C warning/anomaly and return through RECOVERY to NORMAL were observed in Wokwi. The final cleaned firmware passed a fresh Wokwi baseline check: NORMAL state, zero validation issues, anomaly=0, verified TLS connection and MQTT broker acknowledgements. GitHub Actions passed both host verification and the fresh ESP32 build, including UF2 packaging and firmware artifact upload. [Verified run](https://github.com/maheshrupineni/ai-secure-industrial-monitoring-firmware/actions/runs/41179300683).
 
 ## Embedded anomaly model
 

@@ -14,10 +14,14 @@ Author: Mahesh Rupineni. Updated: 31 October 2026.
 | Recovery live | RECOVERY -> NORMAL at sequence 72; NORMAL through sequence 84 with zero validation issues | Same temperature test, not independent field validation |
 | MQTT | Verified TLS connection, queued telemetry and matching broker acknowledgements | Acknowledgement is not independent receiver validation; reconnects and offline gaps remain |
 | OTA historical | 0.1.0 -> 0.1.1 update/confirmation; deliberate 0.1.2 rejection and rollback observed earlier | Older firmware/candidates; deleted hosting unavailable; no final sensor-image repeat yet |
-| CI | Workflow supplied | Host CI passed; first fresh firmware CI exposed an undefined optional DS18B20 sensor-hub flag; explicit disabled Kconfig compatibility setting added; rerun pending |
+| CI | Host and firmware jobs passed | Run 41179300683 on source commit 5ea27ba85e280d377e22c99f2aa25308d0842627; UF2 and artifact upload successful |
 
 The latest normal -> 65°C warning/anomaly -> recovery -> normal sequence was supplied as user terminal logs. Historical OTA results were observed earlier in the project, not reproduced by host verification. The cleanup package preserves driver/model bytes and changes only the startup banner among active firmware C sources.
 
 The user ran `python3 scripts/verify.py --firmware` successfully after cleanup. The final fresh Wokwi log showed the ESP32 Industrial Monitor banner, NORMAL snapshots through sequence 12, zero validation issues, score 0.311085, anomaly=0, verified TLS and broker acknowledgements. No sensor errors appeared in that supplied short log. These results do not close the limitations below. Follow demo.md for a combined recording if desired.
 
 Open observations: earlier CPU1 idle-watchdog warning during OTA, transient DS18B20 CRC errors while controls changed, MPU6050 timing timeout, public broker reconnects, and incomplete negative OTA/TLS tests. No hardware test, field accuracy, industrial safety or hard-real-time guarantee is claimed.
+
+## Published CI evidence
+
+[GitHub Actions run 41179300683](https://github.com/maheshrupineni/ai-secure-industrial-monitoring-firmware/actions/runs/41179300683) passed host checks and the ESP32 build/UF2 artifact upload on source commit `5ea27ba85e280d377e22c99f2aa25308d0842627`. Fresh-checkout configuration initially failed because the pinned DS18B20 dependency referenced an optional sensor-hub setting. The project now declares that setting and explicitly disables it in sdkconfig. Sensor processing and model parameters are unchanged. This CI result demonstrates a fresh build, not a repeat of runtime or historical OTA tests.
